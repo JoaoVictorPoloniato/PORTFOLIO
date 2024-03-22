@@ -1,0 +1,27 @@
+.photo-container {
+  width: 500px; 
+  height: 500px; 
+  overflow: hidden;
+  position: absolute;
+  left: 15%; 
+  top: 15%; 
+}
+
+
+@media (max-width: 768px) {
+  .photo-container {
+      width: 90vw; 
+      max-width: 500px; 
+      height: auto;
+      left: 50%; 
+      top: 10%; 
+      transform: translateX(-50%);
+  }
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease-in-out; 
+  border-radius: 50%; 
+}
