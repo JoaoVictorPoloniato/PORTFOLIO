@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/Header';
 import Photo from '../components/Photo/Photo';
 import Profile from '../components/Profile/Profile';
+import ForMe from '../components/For-me/ForMe';
 
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
     <div>
       <Header /> 
       <Profile />
+      <ForMe />
       <Photo />
     </div>
   );

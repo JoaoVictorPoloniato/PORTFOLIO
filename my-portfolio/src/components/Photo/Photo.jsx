@@ -18,11 +18,11 @@ function Photo() {
     return (
         <div className="photo-container">
             <img
-              className="photo"
-              src="https://avatars.githubusercontent.com/u/117031491?v=4"
-              alt="eu"
-              onMouseMove={handleMouseMove}
-              onMouseLeave={handleMouseLeave}
+                className="photo"
+                src="https://avatars.githubusercontent.com/u/117031491?v=4"
+                alt="eu"
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
             />
         </div>
     );
