@@ -17,7 +17,7 @@ function Header() {
       <nav className={`navbar ${showMenu ? 'active' : ''}`}>
         <ul>
           <li><a href="profile-container">Home</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="selection-section">Skills</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Contato</a></li>
         </ul>
