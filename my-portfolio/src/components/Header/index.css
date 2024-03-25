@@ -55,4 +55,39 @@ body {
       text-align: center; 
     }
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      cursor: pointer;
+    }
+    
+    .menu-icon {
+      width: 30px;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      left: 1%;
+      transform: translateY(-50%);
+    }
+    
+    .bar {
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      margin: 5px 0;
+      transition: 0.4s;
+    }
+    
+    .open .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .open .bar:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .open .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+  }
