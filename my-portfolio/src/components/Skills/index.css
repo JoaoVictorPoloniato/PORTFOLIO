@@ -62,11 +62,13 @@
     transform: translateY(-50%);
   }
 
+
+
   @media (max-width: 768px) {
 
     .selection-section {
       text-align: center;
-      margin-top: 60%;
+      margin-top: 70%;
       background-color: rgb(24, 23, 23);
     }
     .languages-container {
@@ -74,15 +76,16 @@
       overflow-x: auto;
       -webkit-overflow-scrolling: touch; 
       margin-top: 10%;
+      background-color: rgb(24, 23, 23);
     }
+
   
     .language-item {
       flex: 0 0 33.33%;
     }
   
     .navigation-buttons {
-      display: none;
-
+      margin-top: -30%;
     }
   }
   

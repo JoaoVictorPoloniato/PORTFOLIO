@@ -25,10 +25,10 @@
   color: white;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .myperson {
       position: static;
-      margin-top: 80%;
+      margin-top: 100%;
       margin-left: 50%;
       text-align: center;
   }
@@ -42,6 +42,28 @@
   }
 
   .myperson h3 {
-      font-size: 0.8rem;
+      font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .myperson {
+      position: static;
+      margin-top: 110%;
+      margin-left: 50%;
+      text-align: center;
+  }
+
+  .myperson h1 {
+      font-size: 1.5rem; 
+  }
+
+  .myperson h2 {
+      font-size: 1rem; 
+  }
+
+  .myperson h3 {
+      font-size: 1rem;
   }
 }

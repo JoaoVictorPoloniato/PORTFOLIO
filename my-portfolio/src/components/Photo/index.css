@@ -41,6 +41,22 @@
   box-shadow: 1vw 1vw 1vw  rgba(0, 255, 242, 0.5); 
 }
 
+@media (max-width: 1000px) {
+  .photo-container {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    left: 12.5%;
+    top: 14%;
+
+  }
+
+  .photo::before {
+    box-shadow: none; 
+  }
+}
+
+
 @media (max-width: 768px) {
   .photo-container {
     width: 85%;
