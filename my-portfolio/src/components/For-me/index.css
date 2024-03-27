@@ -1,6 +1,6 @@
 .form-container {
     position: absolute;
-    max-width: 500px;
+    max-width: 30vw;
     margin: 0 auto;
     padding: 20px;
     margin-left: 49%;
@@ -35,12 +35,12 @@
         max-width: 100%;
         margin-top: -13%;
         margin-left: 10%;
-        padding: 10px;
+        padding: 1vw;
     }
 
 
     .form-container p {
         font-size: 1rem;
-        margin-bottom: 8px;
+        margin-bottom: 0.8vw;
     }
 }

@@ -6,7 +6,7 @@
   
   .selection-section h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 3.1vw;
     padding: 2%;
   }
   
@@ -19,9 +19,8 @@
   
   .language-item {
     flex: 1;
-    padding: 10px;
-    margin: 0 2px;
-    border-radius: 5px;
+    padding: 0.8vw;
+    margin: 0 0.2vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,9 +28,9 @@
   }
   
   .language-item img {
-    width: 80px; 
+    width: 6vw; 
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: 0.1vw;
     border-radius: 30%;
     color: white;
   }
@@ -41,10 +40,10 @@
   }
   
   .navigation-buttons button {
-    padding: 10px 20px;
-    margin: 0 5px;
+    padding: 0.5vw 1vw;
+    margin: 0 0.2vw;
     border: none;
-    border-radius: 5px;
+    border-radius: 1vw;
     cursor: pointer;
   }
 
@@ -63,6 +62,46 @@
   }
 
 
+  @media (max-width: 1250px) {
+
+    .selection-section {
+      text-align: center;
+      margin-top: 45%;
+      background-color: rgb(24, 23, 23);
+      
+    }
+    .selection-section h2 {
+      font-size: 5vw;
+    }
+
+    .selection-section img {
+      width: 8vw;
+      height: 5vw;
+    }
+
+    .selection-section button {
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .languages-container {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; 
+      background-color: rgb(24, 23, 23);
+    }
+
+  
+    .language-item {
+      flex: 0 0 33.33%;
+      margin-top: 12%;
+    }
+  
+    .navigation-buttons {
+      margin-top: -20%;
+    }
+  }
+  
 
   @media (max-width: 768px) {
 
@@ -70,22 +109,80 @@
       text-align: center;
       margin-top: 70%;
       background-color: rgb(24, 23, 23);
+      
     }
+    .selection-section h2 {
+      font-size: 8vw;
+    }
+
+    .selection-section img {
+      width: 12vw;
+      height: 7vw;
+    }
+
+    .selection-section button {
+      width: 5vw;
+      height: 5vw;
+    }
+
     .languages-container {
       flex-wrap: nowrap;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch; 
-      margin-top: 10%;
+      margin-top: 8%;
       background-color: rgb(24, 23, 23);
     }
 
   
     .language-item {
       flex: 0 0 33.33%;
+      margin-top: 8%;
     }
   
     .navigation-buttons {
       margin-top: -30%;
     }
   }
+
+    @media (max-width: 600px) {
+
+    .selection-section {
+      text-align: center;
+      margin-top: 80%;
+      background-color: rgb(24, 23, 23);
+      
+    }
+    .selection-section h2 {
+      font-size: 8vw;
+    }
+
+    .selection-section img {
+      width: 12vw;
+      height: 7vw;
+    }
+
+    .selection-section button {
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .languages-container {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch; 
+      margin-top: 8%;
+      background-color: rgb(24, 23, 23);
+    }
+
+  
+    .language-item {
+      flex: 0 0 33.33%;
+      margin-top: 8%;
+    }
+  
+    .navigation-buttons {
+      margin-top: -30%;
+    }
+  }
+  
   
