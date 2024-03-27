@@ -58,6 +58,10 @@
   }
 
   @media (max-width: 800px) {
+
+    .selection-section h2 {
+      font-size: 6vw;
+    }
     .navigation-buttons-left{
       
       left: -45%;
@@ -67,6 +71,5 @@
       right: -45%;
       top: -15.5vw;
   }
-  
-  }
+}
 
