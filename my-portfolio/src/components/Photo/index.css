@@ -1,10 +1,17 @@
+.perfil-photo{
+  width: 49%;
+  display: inline-block;
+  padding: 3vw 0;
+
+}
+
 .photo-container {
+  display: flex;
+  margin:  auto 0;
   width: 29vw;
   height: 29vw;
   overflow: hidden;
-  position: absolute;
-  left: 15%;
-  top: 15%;
+  margin-left: calc(95% - 29vw);
   transition: transform 0.3s ease-in-out; 
   border-radius: 50%;
   animation: slideInFromLeft 1s ease-in-out; 
@@ -45,33 +52,20 @@
     transform: translateX(0);
   }
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 800px) {
+  .perfil-photo {
+    width: 100%; /* Ocupa toda a largura disponível */
+    display: block; /* Agora será um bloco para ficar em linha */
+    text-align: center; /* Centraliza a imagem */
+    padding: 3vw 0;
+  }
+
   .photo-container {
-    width: 80%;
-    height: auto;
-    border-radius: 50%;
-    left: 12.5%;
-    top: 14%;
-
-  }
-
-  .photo::before {
-    box-shadow: none; 
-  }
-}
-
-
-@media (max-width: 768px) {
-  .photo-container {
-    width: 85%;
-    height: auto;
-    border-radius: 50%;
-    left: 8%;
-    top: 13%;
-
-  }
-
-  .photo::before {
-    box-shadow: none; 
+    width: 60vw; /* Tamanho ajustável para se adaptar a telas menores */
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    animation: none; /* Remover a animação de entrada para dispositivos menores */
   }
 }

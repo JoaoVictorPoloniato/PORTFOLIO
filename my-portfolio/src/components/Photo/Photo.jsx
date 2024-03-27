@@ -14,12 +14,14 @@ function Photo() {
     }, []);
 
     return (
-        <div className={`photo-container ${photoLoaded ? 'loaded' : ''}`}>
-            <img
-                className={`photo ${photoLoaded ? 'animate-slide' : ''}`}
-                src={myPhoto}
-                alt="eu"
-            />
+        <div className="perfil-photo">
+            <div className={`photo-container ${photoLoaded ? 'loaded' : ''}`}>
+                <img
+                    className={`photo ${photoLoaded ? 'animate-slide' : ''}`}
+                    src={myPhoto}
+                    alt="eu"
+                />
+            </div>
         </div>
     );
 }

@@ -13,11 +13,13 @@ function Profile() {
     }, [inView]);
 
     return (
-        <div ref={ref} className={`profile-container ${visible ? 'visible' : ''}`}>
-            <div className='myperson'>
-                <h3>Olá, Eu sou</h3>
-                <h1>João Victor Poloniato Buss</h1>
-                <h2>Desenvolvedor Front-End</h2>
+        <div className='meu-perfil'>
+            <div ref={ref} className={`profile-container ${visible ? 'visible' : ''}`}>
+                <div className='myperson'>
+                    <h3>Olá, Eu sou</h3>
+                    <h1>João Victor Poloniato Buss</h1>
+                    <h2>Desenvolvedor Front-End</h2>
+                </div>
             </div>
         </div>
     );

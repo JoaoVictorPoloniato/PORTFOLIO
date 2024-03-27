@@ -10,9 +10,9 @@ function Home() {
   return (
     <div>
       <Header /> 
+      <Photo />
       <Profile />
       <ForMe />
-      <Photo />
       <Skills />
     </div>
   );
