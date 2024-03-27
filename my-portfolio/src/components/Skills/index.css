@@ -27,17 +27,14 @@
   }
   
   .language-item img {
-    width: 6vw; 
+    width: 10vw; 
     height: auto;
-    margin-bottom: 0.1vw;
+    margin-bottom: 1vw;
     border-radius: 30%;
     color: white;
   }
   
-  .navigation-container {
-    position: relative;
-  }
-  
+
   .navigation-buttons button {
     padding: 0.5vw 1vw;
     margin: 0 0.2vw;
@@ -48,14 +45,28 @@
 
   .navigation-buttons-left {
     position: relative;
-    left: -38%;
-    top: -5.5vw;
+    left: -40%;
+    top: -7.5vw;
     transform: translateY(-50%);
   }
 
   .navigation-buttons-right {
     position: relative;
-    right: -38%;
-    top: -5.5vw;
+    right: -40%;
+    top: -7.5vw;
     transform: translateY(-50%);
   }
+
+  @media (max-width: 800px) {
+    .navigation-buttons-left{
+      
+      left: -45%;
+      top: -15.5vw;
+    }
+    .navigation-buttons-right {
+      right: -45%;
+      top: -15.5vw;
+  }
+  
+  }
+

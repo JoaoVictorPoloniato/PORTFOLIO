@@ -8,7 +8,7 @@ import Skills from '../components/Skills/Skills';
 
 function Home() {
   return (
-    <div>
+    <div className='principal'>
       <Header /> 
       <Photo />
       <Profile />

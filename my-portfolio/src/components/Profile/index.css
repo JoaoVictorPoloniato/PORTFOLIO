@@ -1,5 +1,5 @@
 .meu-perfil {
- 
+  background-color: rgba(34, 34, 34, 100);
   width: 49%;
   float: right;
   height: 25%;
@@ -47,12 +47,32 @@
 }
 
 @media (max-width: 800px) {
+  .meu-perfil{
+    width: 100%;
+    text-align: center;
+    margin-top: 1%;
+  }
+
   .perfil-photo {
     width: 100%;
     display: block;
     margin: 0;
-    padding: 3vw 0;
-    float: left;
+    padding: 1vw 0;
   }
 
+  .myperson h1 {
+    font-size: 5.0vw;
+    color: rgb(0, 255, 242);
+  }
+  
+  
+  .myperson h2 {
+    font-size: 4.5vw;
+    color: white;
+  }
+  
+  .myperson h3 {
+    font-size: 4.0vw;
+    color: white;
+  }
 }
