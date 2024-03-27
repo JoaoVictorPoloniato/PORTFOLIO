@@ -37,6 +37,8 @@ body {
     margin-left: 0.5vw; 
   }
 
+
+
   @media screen and (max-width: 900px) {
     ul {
       margin-left: 0;
@@ -74,6 +76,7 @@ body {
     }
 
   }
+
   
   
   @media screen and (max-width: 768px) {

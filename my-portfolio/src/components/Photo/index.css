@@ -6,7 +6,8 @@
   left: 15%;
   top: 15%;
   transition: transform 0.3s ease-in-out; 
-  border-radius: 50%; 
+  border-radius: 50%;
+  animation: slideInFromLeft 1s ease-in-out; 
 }
 
 .photo {
@@ -34,6 +35,16 @@
   box-shadow: 1vw 1vw 1vw  rgba(0, 255, 242, 0.5); 
 }
 
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 @media (max-width: 1000px) {
   .photo-container {
     width: 80%;
