@@ -1,0 +1,52 @@
+.projects-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0;
+}
+
+.project {
+    color: white;
+    border-radius: 2.5vw;
+    border: 0.2vw solid #333;
+    box-shadow: 0 0 2vw #555;
+    margin: 1vw;
+    background-color: rgb(24, 23, 23);
+    transition: transform 0.3s ease-in-out;
+    perspective: 10vw; 
+    width: 20vw;
+    height: 25vw; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project.active {
+    transform: rotateY(0deg); 
+}
+
+.project-image {
+    border-radius: 2.5vw 2.5vw 0 0;
+    width: 100%;
+    height: auto;
+    max-height: 55%; 
+    display: block; 
+}
+
+.project-info {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+}
+
+.project-links a {
+    margin: 0 1vw; 
+}
+
+.project-links img {
+    width: 2vw; 
+    height: 2vw;
+}

@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Estilo para navegadores WebKit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 5px; /* Largura da barra de rolagem */
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Cor de fundo da trilha da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cor do polegar da barra de rolagem */
+  border-radius: 6px; /* Raio do canto do polegar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor do polegar da barra de rolagem ao passar o mouse */
+}

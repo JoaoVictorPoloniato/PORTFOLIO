@@ -4,6 +4,7 @@ import Photo from '../components/Photo/Photo';
 import Profile from '../components/Profile/Profile';
 import ForMe from '../components/For-me/ForMe';
 import Skills from '../components/Skills/Skills';
+import Project from '../components/projects';
 import Footer from '../components/Footer';
 
 
@@ -15,6 +16,7 @@ function Home() {
       <Profile />
       <ForMe />
       <Skills />
+      <Project />
       <Footer />
     </div>
   );
