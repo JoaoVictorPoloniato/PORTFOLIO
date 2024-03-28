@@ -36,8 +36,8 @@ function Header() {
       </div>
       <nav className="nav-bar">
         <ul>
-          <li><a href="profile-container">Home</a></li>
-          <li><a href="selection-section">Skills</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Skills</a></li>
           <li><a href="#">Serviços</a></li>
           <li><a href="#">Contato</a></li>
         </ul>

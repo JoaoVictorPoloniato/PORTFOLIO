@@ -1,5 +1,11 @@
 import React from 'react';
 import './index.css';
+import emailIcon from './img/email.png';
+import instagramIcon from './img/instagram.png';
+import whatsappIcon from './img/whatsapp.png';
+import linkedinIcon from './img/linkedin.png';
+import gitIcon from './img/github.png';
+import arrowUpIcon from './img/upload.png';
 
 const Footer = () => {
 
@@ -10,16 +16,35 @@ const Footer = () => {
     return (
         <footer>
             <div className='container-footer'>
-                <div className='sobre-mim'>
-                    <h2>Esse foi alguns dos meus trabalhos e projetos.</h2>
-                    <h3>Espero que tenha gostado.</h3>
-                    <p>Trabalho na área como desenvolvedor full stack, aqui compartilhei alguns de meus projetos.</p>
-                    <p>Caso queira entrar em contato comigo para conversar sobre algo estou dispobilizando meus contatos.</p>
-                    <p>Pode tambem me chamar caso queira uma conversa como bons amigos. Estou sempre a disposição para aprender e a ensinar tambem.😉</p>
-                </div>
                 <button onClick={scrollTop} className='back-to-top-btn'>
-                    <i className='fa fa-arrow-up'></i>
+                    <img src={arrowUpIcon} alt="Voltar ao topo" />
                 </button>
+
+                <div className='message'>
+                    <h2>Entre em contato comigo.</h2>
+                </div>
+
+                <div className='contact-info'>
+                    <a href="mailto:poloniato155@gmail.com">
+                        <img src={emailIcon} alt="Email" />
+                    </a>
+                    <a href="https://www.instagram.com/jpoloniato" target="_blank" rel="noopener noreferrer">
+                        <img src={instagramIcon} alt="Instagram" />
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5566996837095" target="_blank" rel="noopener noreferrer">
+                        <img src={whatsappIcon} alt="WhatsApp" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/joão-victor-poloniato-buss-908177164/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedinIcon} alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/JoaoVictorPoloniato" target="_blank" rel="noopener noreferrer">
+                        <img src={gitIcon} alt="GitHub" />
+                    </a>
+                </div>
+
+                <div className='copyright'>
+                    <p>&copy; {new Date().getFullYear()} João Victor Poloniato Buss. Todos os direitos reservados.</p>
+                </div>
             </div>
         </footer>
     );

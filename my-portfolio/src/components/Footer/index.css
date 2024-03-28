@@ -1,27 +1,86 @@
 .container-footer {
-    width: 100%;
-    height: 19vw;
-    background-color: blue;
-}
-
-.sobre-mim {
-    width: 35%;
-    height: 100%;
-    margin-left: 5%;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    text-align: center;
     color: white;
 }
 
-.sobre-mim h2 {
-    font-size: 1vw;
+.message {
+    margin-bottom: 1vw;
 }
 
-.sobre-mim h3 {
-    font-size: 0.8vw;
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vw;
 }
 
-.sobre-mim p {
-    width: 55%;
-    background-color: aqua;
-    font-size: 0.8vw;
+.contact-info a {
+    margin: 0 2vw;
+    width: 2vw;
+    height: 2vw;
+}
+
+.contact-info img {
+    width: 100%;
+    height: 100%;
+}
+
+.back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.back-to-top-btn img {
+    width: 100%; 
+    height: auto;
+}
+
+.back-to-top-btn:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .container-footer {
+        padding: 0vw;
+    }
+
+    .message,
+    .contact-info {
+        margin-bottom: 0.5vw;
+    }
+
+    .contact-info a {
+        margin: 0 5vw;
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .contact-info img {
+        width: 70%;
+        height: 70%;
+    }
+    
+
+    .back-to-top-btn {
+        width: 8vw;
+        height: 8vw;
+        font-size: 2.5vw;
+    }
+
+    .copyright {
+        font-size: 3vw;
+    }
+
 }

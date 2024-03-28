@@ -1,3 +1,5 @@
 .principal{
     background-color: rgba(34, 34, 34, 100);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
