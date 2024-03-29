@@ -40,7 +40,7 @@ const ProjectsSection = () => {
 
     return (
         <section className="projects-section">
-            <button onClick={previousProject}>Anterior</button>
+            <button onClick={previousProject} className="btn-back">Anterior</button>
             <div className="project-container">
                 <div className="project">
                     <div className="project-content">
@@ -62,7 +62,7 @@ const ProjectsSection = () => {
                     </div>
                 </div>
             </div>
-            <button onClick={nextProject}>Próximo</button>
+            <button onClick={nextProject} className="btn-go">Próximo</button>
         </section>
     );
 };
