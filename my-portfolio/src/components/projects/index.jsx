@@ -46,7 +46,7 @@ const ProjectsSection = () => {
     };
 
     return (
-        <section className="projects-section" style={{ backgroundImage: `url(${projects[currentProject].image})` }}>
+        <section className="projects-section">
             <button onClick={previousProject}>Anterior</button>
             <div className="project-container">
                 <div className="project">
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
                     </div>
                 </div>
             </div>
-            <button onClick={nextProject}>Próximo</button>
+            <button onClick={nextProject} className="btn-go">Próximo</button>
         </section>
     );
 };
