@@ -3,19 +3,25 @@
     justify-content: center;
     align-items: center;
     margin: 4vw 0;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    
 }
 
 .project {
     color: white;
     border-radius: 2.5vw;
-    border: 0.2vw solid #333;
-    box-shadow: 0 0 2vw #555;
+    border: 0.01vw solid #333;
+
     margin: 1vw;
-    background-color: rgb(24, 23, 23);
+    background-color: rgba(10, 10, 10, 0.63);
     transition: transform 0.3s ease-in-out;
     perspective: 10vw; 
     width: 20vw;
-    height: 25vw; 
+    height: 18vw;
+    align-content: center; 
+    justify-content: center;
     display: flex;
     flex-direction: column;
 }
@@ -26,6 +32,7 @@
 
 .project-image {
     border-radius: 2.5vw 2.5vw 0 0;
+    
     width: 100%;
     height: auto;
     max-height: 55%; 
@@ -35,11 +42,13 @@
 .project-info {
     text-align: center;
     flex-grow: 1;
+    padding: 1vw;
 }
 
 .project-links {
     display: flex;
     justify-content: center;
+    margin-top: 1vw;
 }
 
 .project-links a {
