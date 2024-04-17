@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import './index.css';
-import githubIcon from './img/github.png';
-import webIcon from './img/website.png';
 import projeto1 from './img/projeto1.png';
 import projeto2 from './img/projeto2.png';
 import projeto3 from './img/projeto3.png';
-import projeto4 from './img/projeto4.png';
+import githubIcon from './img/github.png';
+import webIcon from './img/website.png';
 
 const ProjectsSection = () => {
     const [currentProject, setCurrentProject] = useState(0);
@@ -28,12 +27,6 @@ const ProjectsSection = () => {
             description: "Como foi meu curso de react e next", 
             image: projeto3,
             githubLink: "https://github.com/JoaoVictorPoloniato/CURSO-REACT",
-        },
-        { 
-            name: "Cardápio Online", 
-            description: "Cardápio online, feito com tailwindcss, HTML e JS, feito com integrações para clientes, para atender a restaurantes e food-trucks pequenos.", 
-            image: projeto4,
-            githubLink: "https://github.com/JoaoVictorPoloniato/CARDAPIO-ONLINE",
         }
     ];
 
@@ -47,10 +40,11 @@ const ProjectsSection = () => {
 
     return (
         <section className="projects-section">
-            <button onClick={previousProject}>Anterior</button>
+            <button onClick={previousProject} className="btn-back">Anterior</button>
             <div className="project-container">
                 <div className="project">
                     <div className="project-content">
+                        <img src={projects[currentProject].image} alt={projects[currentProject].name} className="project-image" />
                         <div className="project-info">
                             <h3>{projects[currentProject].name}</h3>
                             <p>{projects[currentProject].description}</p>

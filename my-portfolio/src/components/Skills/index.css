@@ -23,7 +23,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+  }
+  .language-item p{
+    color: #fff;
+    font-size: 2rem;
   }
   
   .language-item img {
