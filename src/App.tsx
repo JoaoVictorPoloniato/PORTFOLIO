@@ -15,7 +15,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter basename="/PORTFOLIO"> {/* ADICIONE ESTA LINHA */}
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="*" element={<NotFound />} />
