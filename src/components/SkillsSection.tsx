@@ -11,19 +11,19 @@ const SkillsSection = () => {
     },
     {
       title: t("Frameworks & Tools", "Frameworks & Ferramentas"),
-      skills: ["FastAPI", "React", "Django", "Flask", ".NET", "N8N", "Docker"],
+      skills: ["FastAPI", "React", "Django", "Flask", ".NET", "N8N", "NEST", "Next"],
     },
     {
       title: t("AI & Automation", "IA & Automação"),
-      skills: ["OpenAI API", "Blip", "Webhooks", "ETL", "NLP", "LLMs"],
+      skills: ["OpenAI API", "Blip", "Webhooks", "ETL", "NLP", "LLMs", "N8N", "RPA"],
     },
     {
       title: t("Databases", "Bancos de Dados"),
-      skills: ["MySQL", "PostgreSQL", "MariaDB", "Sybase", "Firebird"],
+      skills: ["MySQL", "PostgreSQL", "MariaDB", "Sybase", "Firebird", "Oracle DB", "Supabase", "MongoDB", "Cassandra", "SQL Server"],
     },
     {
       title: t("Cloud & DevOps", "Cloud & DevOps"),
-      skills: ["Google Cloud", "AWS", "Git", "Docker", "Ubuntu", "Apache"],
+      skills: ["Google Cloud", "AWS", "Git", "Docker", "Ubuntu", "Apache", "Kubernetes"],
     },
     {
       title: t("Data & BI", "Dados & BI"),

@@ -1,14 +1,30 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import ImageCarousel from "@/components/ImageCarousel"; // Importe o novo componente
 import projectWhatsapp from "@/assets/project-whatsapp.png";
 import projectOpenai from "@/assets/project-openai.png";
 import projectBlip from "@/assets/project-blip.png";
 
+// Importe as imagens do DR.CIDETECT (você vai adicionar depois)
+import cidetect1 from "@/assets/dashboard-frente.png";
+import cidetect2 from "@/assets/cids.png";
+import cidetect3 from "@/assets/aprovacoes.png";
+import cidetect4 from "@/assets/fomulario.png";
+import cidetect5 from "@/assets/insert_cid.png";
+import cidetect6 from "@/assets/tutorial.png";
+// Adicione mais imports conforme necessário
+
+// Dash Gapy
+import dashgap1 from "@/assets/gapy1.png";
+import dashgap2 from "@/assets/gapy2.png";
+import dashgap3 from "@/assets/gapy3.png";
+
 interface Project {
   title: string;
   description: string;
-  image: string;
+  image?: string; // Mantido para compatibilidade
+  images?: string[]; // Novo campo para carrossel
   techs: string[];
   link?: string;
 }
@@ -17,6 +33,23 @@ const ProjectsSection = () => {
   const { t } = useLanguage();
 
   const projects: Project[] = [
+    {
+      title: "DR.CIDETECT - AI Medical CID Prediction System",
+      description: t(
+        "AI system that predicts medical CID codes from clinical forms using NLP. Complete ML pipeline with real-time predictions and continuous learning from validation feedback.",
+        "Sistema de IA que prediz códigos CID médicos de formulários clínicos usando NLP. Pipeline completo de ML com predições em tempo real e aprendizado contínuo com feedback de validações."
+      ),
+      images: [
+        cidetect1,
+        cidetect2,
+        cidetect3,
+        cidetect4,
+        cidetect5,
+        cidetect6
+      ],
+      techs: ["React", "TypeScript", "Python", "NLP", "Machine Learning", "AI/ML Pipeline", "FastAPI", "JWT Authentication", "ORACLE"],
+      link: "#",
+    },
     {
       title: "WhatsApp Flow Builder",
       description: t(
@@ -33,7 +66,7 @@ const ProjectsSection = () => {
         "Dashboard analítico para monitoramento de uso da API OpenAI, custos, consumo de tokens e distribuição por modelo com gráficos em tempo real."
       ),
       image: projectOpenai,
-      techs: ["React", "Python", "OpenAI API", "Charts"],
+      techs: ["JavaScript", "Python", "OpenAI API", "Chart.js", "N8N", "ORACLE"],
     },
     {
       title: "Blip Scripts Generator",
@@ -42,8 +75,21 @@ const ProjectsSection = () => {
         "Suite profissional de ferramentas para desenvolvimento de chatbots no Blip — menus interativos, scripts regex, gerenciamento de variáveis, requisições HTTP e roteamento de bots."
       ),
       image: projectBlip,
-      techs: ["React", "TypeScript", "Blip API", "N8N"],
+      techs: ["React", "TypeScript", "Blip API", "Python"],
     },
+    {
+      title: "BI Dashboard for truck tire retreading company",
+      description: t(
+        "BI dashboard for a truck tire retreading company, providing insights into sales, inventory, and customer behavior to optimize operations and drive growth.",
+        "Dashboard de BI para uma empresa de recapagem de pneus de caminhão, fornecendo insights sobre vendas, estoque e comportamento do cliente para otimizar operações e impulsionar o crescimento."
+      ),
+      images: [
+        dashgap1,
+        dashgap2,
+        dashgap3
+      ],
+      techs: ["Python", "chart.js", "SQL", "Data Visualization", "SQL Server"],
+    }
   ];
 
   return (
@@ -80,12 +126,20 @@ const ProjectsSection = () => {
               className="group overflow-hidden rounded-lg border border-border bg-card transition-all hover:border-primary hover:border-glow"
             >
               <div className="relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="h-48 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                {project.images ? (
+                  // Usa o carrossel se tiver múltiplas imagens
+                  <ImageCarousel images={project.images} alt={project.title} interval={5000} />
+                ) : (
+                  // Usa imagem única se não tiver carrossel
+                  <>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="h-48 w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                  </>
+                )}
               </div>
 
               <div className="p-6">
