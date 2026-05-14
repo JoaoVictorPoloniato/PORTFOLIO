@@ -1,6 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { motion } from "framer-motion";
-import { ArrowDown, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowDown, Linkedin, Mail, MapPin, Github } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="h-32 w-32 overflow-hidden rounded-full border-2 border-primary border-glow"
+          className="h-32 w-32 overflow-hidden rounded-full border-2 border-primary border-glow shadow-[0_0_15px_rgba(var(--primary),0.5)]"
         >
           <img src={profilePhoto} alt="João Victor" className="h-full w-full object-cover" />
         </motion.div>
@@ -37,10 +37,10 @@ const HeroSection = () => {
             João Victor
             <span className="block gradient-text">Poloniato Buss</span>
           </h1>
-          <p className="mx-auto max-w-xl text-lg text-muted-foreground">
+          <p className="mx-auto max-w-xl text-lg font-medium text-muted-foreground">
             {t(
-              "AI Analyst · Backend Developer · Automation Specialist",
-              "Analista de IA · Desenvolvedor Backend · Especialista em Automação"
+              "AI Engineer | Machine Learning & NLP | Python & FastAPI",
+              "Engenheiro de IA | Machine Learning & NLP | Python & FastAPI"
             )}
           </p>
         </motion.div>
@@ -49,22 +49,30 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="flex items-center gap-4 text-sm text-muted-foreground"
+          className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground md:gap-6"
         >
           <span className="flex items-center gap-1">
-            <MapPin className="h-4 w-4 text-primary" /> Sinop, MT - Brasil
+            <MapPin className="h-4 w-4 text-primary" /> {t("Brazil", "Brasil")}
           </span>
           <a
-            href="https://www.linkedin.com/in/jo%C3%A3o-victor-poloniato-buss-908177164/"
+            href="https://github.com/joaovictorPoloniato"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1 transition-colors hover:text-primary"
+            className="flex items-center gap-1 transition-all hover:scale-105 hover:text-primary"
+          >
+            <Github className="h-4 w-4" /> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/joão-victor-poloniato-buss-908177164/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 transition-all hover:scale-105 hover:text-primary"
           >
             <Linkedin className="h-4 w-4" /> LinkedIn
           </a>
           <a
             href="mailto:poloniato155@gmail.com"
-            className="flex items-center gap-1 transition-colors hover:text-primary"
+            className="flex items-center gap-1 transition-all hover:scale-105 hover:text-primary"
           >
             <Mail className="h-4 w-4" /> Email
           </a>
@@ -75,7 +83,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
-          className="mt-12 animate-bounce text-primary"
+          className="mt-12 animate-bounce text-primary hover:text-glow-strong"
         >
           <ArrowDown className="h-6 w-6" />
         </motion.a>
