@@ -8,26 +8,26 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Brain,
-      title: t("AI & Automation", "IA & Automação"),
+      title: t("AI & Machine Learning", "IA & Machine Learning"),
       desc: t(
-        "Building intelligent workflows and AI-driven solutions to optimize business processes.",
-        "Construindo workflows inteligentes e soluções com IA para otimizar processos de negócio."
+        "Developing NLP models, Generative AI solutions, and intelligent chatbots to solve complex business challenges.",
+        "Desenvolvendo modelos de NLP, soluções de IA Generativa e chatbots inteligentes para resolver desafios de negócios."
       ),
     },
     {
       icon: Code2,
-      title: t("Backend Development", "Desenvolvimento Backend"),
+      title: t("Backend & Microservices", "Backend & Microsserviços"),
       desc: t(
-        "APIs, microservices, and scalable architectures with Python, FastAPI, and Node.js.",
-        "APIs, microsserviços e arquiteturas escaláveis com Python, FastAPI e Node.js."
+        "Building robust RESTful APIs and scalable architectures using Python, FastAPI, and Java.",
+        "Construindo APIs RESTful robustas e arquiteturas escaláveis usando Python, FastAPI e Java."
       ),
     },
     {
       icon: Workflow,
-      title: t("System Integration", "Integração de Sistemas"),
+      title: t("Data Pipelines & DevOps", "Pipelines de Dados & DevOps"),
       desc: t(
-        "Connecting systems via webhooks, CRM integrations, and data pipelines.",
-        "Conectando sistemas via webhooks, integrações CRM e pipelines de dados."
+        "Orchestrating automated workflows with N8N and managing scalable deployments using Docker and Kubernetes.",
+        "Orquestrando workflows automatizados com N8N e gerenciando deploys escaláveis usando Docker e Kubernetes."
       ),
     },
   ];
@@ -50,8 +50,8 @@ const AboutSection = () => {
 
           <p className="mb-12 max-w-3xl text-muted-foreground leading-relaxed">
             {t(
-              "I am an AI Developer focused on Python and JavaScript, working mainly with backend development, automation, and system integrations. I build APIs, intelligent workflows, webhooks, and scalable solutions, applying AI to optimize processes, reduce operational effort, and improve user experience. I have experience with FastAPI, N8N, Blip, CRM integrations, data processing, and databases such as MySQL, MariaDB, and Sybase.",
-              "Sou um Desenvolvedor de IA focado em Python e JavaScript, atuando principalmente com desenvolvimento backend, automação e integrações de sistemas. Construo APIs, workflows inteligentes, webhooks e soluções escaláveis, aplicando IA para otimizar processos, reduzir esforço operacional e melhorar a experiência do usuário. Tenho experiência com FastAPI, N8N, Blip, integrações CRM, processamento de dados e bancos de dados como MySQL, MariaDB e Sybase."
+              "I am an AI Engineer with a strong background in developing, integrating, and deploying Artificial Intelligence and Machine Learning solutions. My expertise spans the full software lifecycle, from building robust data pipelines and orchestrating workflows with N8N, to serving AI models via RESTful APIs using Python and FastAPI. I have proven experience in designing NLP applications, Generative AI solutions, and complex chatbot architectures (BLIP). I am passionate about leveraging data and tools like Docker and Kubernetes to build intelligent, scalable, and business-aligned systems.",
+              "Sou um Engenheiro de IA com forte experiência no desenvolvimento, integração e deploy de soluções de Inteligência Artificial e Machine Learning. Minha expertise abrange todo o ciclo de vida do software, desde a construção de pipelines de dados robustos e orquestração de workflows com N8N, até o fornecimento de modelos de IA via APIs RESTful usando Python e FastAPI. Tenho experiência comprovada na criação de aplicações de NLP, soluções de IA Generativa e arquiteturas complexas de chatbots (BLIP). Sou apaixonado por usar dados e ferramentas como Docker e Kubernetes para construir sistemas inteligentes, escaláveis e alinhados aos objetivos do negócio."
             )}
           </p>
         </motion.div>
