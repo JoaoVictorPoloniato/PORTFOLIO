@@ -16,11 +16,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
 
       <div className="relative z-10 flex flex-col items-center gap-8 px-6 text-center">
+        {/* Voltei o container da imagem para o padrão original */}
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="h-32 w-32 overflow-hidden rounded-full border-2 border-primary border-glow shadow-[0_0_15px_rgba(var(--primary),0.5)]"
+          className="h-32 w-32 overflow-hidden rounded-full border-2 border-primary border-glow"
         >
           <img src={profilePhoto} alt="João Victor" className="h-full w-full object-cover" />
         </motion.div>
