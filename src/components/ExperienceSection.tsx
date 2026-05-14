@@ -7,37 +7,37 @@ const ExperienceSection = () => {
 
   const experiences = [
     {
-      role: t("Artificial Intelligence Analyst (Mid-Level)", "Analista de Inteligência Artificial (Pleno)"),
+      role: "AI Engineer",
       company: "JMJ Sistemas e Consultoria",
-      period: t("Apr 2025 - Present", "Abr 2025 - Presente"),
-      location: "Sinop, MT",
+      period: t("2025 - Present", "2025 - Presente"),
+      location: t("Brazil", "Brasil"),
       desc: t(
-        "Working with Python and JavaScript on backend development, AI-driven automation, and system integrations. Building APIs, intelligent workflows, and scalable solutions applying AI to optimize processes and improve UX.",
-        "Atuando com Python e JavaScript no desenvolvimento backend, automação com IA e integrações de sistemas. Construindo APIs, workflows inteligentes e soluções escaláveis aplicando IA para otimizar processos e melhorar a UX."
+        "Developed NLP-based ML models decoding ICD codes with 97% accuracy, reducing audit efforts by 80%. Engineered N8N/LLM automated microservices for medical transcription. Built an ML risk-assessment model reaching 98% accuracy. Designed RESTful APIs (FastAPI/Java) and managed scalable deployments using Docker and Kubernetes.",
+        "Desenvolvi modelos de Machine Learning (NLP) para decodificar CIDs com 97% de acurácia, reduzindo o esforço de auditoria em 80%. Criei microsserviços automatizados (N8N e LLMs) para transcrição médica. Construí um modelo de validação de partos com 98% de acurácia. Projetei APIs RESTful (FastAPI/Java) e gerenciei deploys com Docker/Kubernetes."
       ),
-      techs: ["Python", "FastAPI", "N8N", "Blip", "React", "TypeScript"],
+      techs: ["Python", "FastAPI", "NLP", "LLMs", "N8N", "Docker", "Kubernetes", "Java"],
     },
     {
-      role: t("Data Analyst", "Analista de Dados"),
-      company: "Alfameta Sistemas",
+      role: "Software Engineer",
+      company: "Alfameta",
       period: "2024 - 2025",
-      location: "Sinop, MT",
+      location: t("Brazil", "Brasil"),
       desc: t(
-        "Data analysis, Business Intelligence, advanced SQL, API development, RESTful integrations, Docker, and Git workflows.",
-        "Análise de dados, Business Intelligence, SQL avançado, desenvolvimento de APIs, integrações RESTful, Docker e workflows Git."
+        "Integrated an OpenAI LLM-powered application to deliver database insights to end-users, reducing data validation time by 40% and accelerating payment processing by 60%. Developed robust RESTful backend APIs to optimize data pipelines and support core business operations.",
+        "Integrei uma aplicação com LLMs da OpenAI para entregar insights de banco de dados aos usuários, reduzindo o tempo de validação em 40% e acelerando pagamentos em 60%. Desenvolvi APIs RESTful robustas no backend para otimizar pipelines de dados e apoiar operações core."
       ),
-      techs: ["SQL", "Python", "Docker", "Power BI", "APIs RESTful"],
+      techs: ["OpenAI", "Python", "RESTful APIs", "SQL", "Data Pipelines"],
     },
     {
-      role: t("Systems Analyst / Junior Developer", "Analista de Sistemas / Programador Júnior"),
-      company: "PortoTech - Franquia LINX",
+      role: t("Junior Software Engineer", "Engenheiro de Software Júnior"),
+      company: "Porto Tech",
       period: "2021 - 2024",
-      location: "Sinop, MT",
+      location: t("Brazil", "Brasil"),
       desc: t(
-        "Database analysis, system support, data conversion, hardware installation, and development with PHP, JS, and Python.",
-        "Análise de banco de dados, suporte ao sistema, conversão de dados, instalação de hardware e desenvolvimento com PHP, JS e Python."
+        "Participated in the development of full-stack applications (React, Next.js, NestJS, Python), increasing system performance by 25%. Optimized databases and complex data conversions, reducing query time by 30%.",
+        "Participei do desenvolvimento de aplicações full-stack (React, Next.js, NestJS, Python), aumentando a performance do sistema em 25%. Otimizei arquiteturas de banco de dados e conversões complexas, reduzindo o tempo de consulta em 30%."
       ),
-      techs: ["PHP", "JavaScript", "Python", "MySQL", "HTML/CSS"],
+      techs: ["React", "Next.js", "NestJS", "Python", "Databases"],
     },
   ];
 
